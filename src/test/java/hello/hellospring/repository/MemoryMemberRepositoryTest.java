@@ -18,6 +18,7 @@ public class MemoryMemberRepositoryTest {
     //test 끝날때마다 지워주는 코드
     @AfterEach
     public void afterEach() {
+        repository.clearStore();
 
     }
 
