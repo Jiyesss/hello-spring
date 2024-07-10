@@ -1,6 +1,7 @@
 package hello.hellospring.service;
 
 
+import hello.hellospring.aop.TimeTraceAop;
 import hello.hellospring.repository.*;
 
 import hello.hellospring.service.MemberService;
@@ -32,4 +33,12 @@ public class SpringConfig {
         //return new JdbcTemplateMemberRepository(dataSource);
         //return new JpaMemberRepository(em);
     //}
+    /* 이렇게 해도 됨 근데 우리는 걍 COmponent쓸것임
+    @Bean
+    public TimeTraceAop timeTraceAop() {
+        return new TimeTraceAop();
+
+    }
+
+     */
 }
